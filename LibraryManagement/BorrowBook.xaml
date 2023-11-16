@@ -1,0 +1,142 @@
+﻿<Window x:Class="LibraryManagement.BorrowBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryManagement"
+        mc:Ignorable="d"
+        
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:controlbar="clr-namespace:LibraryManagement.UserControlPteam"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        Name="borrowbookWindow"
+       
+        DataContext="{StaticResource BorrowBooksVM}"
+        
+        Title="Danh sách các sách đã mượn" Height="450" Width="800">
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding LoadWindowCommand}"
+                                   CommandParameter="{Binding ElementName=lsvMain}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <controlbar:ControlBarPt Grid.Row="0"></controlbar:ControlBarPt>
+        <Grid Grid.Row="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Grid.Row="0" FontSize="25" FontFamily="Segoe UI" HorizontalAlignment="Center">
+                <Bold>Các sách </Bold>
+                <Bold><TextBlock Text="{Binding BorrowPerson}"/></Bold>
+                <Bold>đã mượn.</Bold></TextBlock>
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0">
+                        <TextBlock Height="10"/>
+                        <TextBox FontSize="16" materialDesign:HintAssist.Hint="Tên sách" Margin="10 0 10 0" 
+                                                     Text="{Binding ObjectName, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                                 Foreground="Black" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        <TextBlock Height="10"/>
+                        <TextBox FontSize="16" materialDesign:HintAssist.Hint="Tác giả" Margin="10 0 10 0"
+                                                     Text="{Binding ObjectAuthor, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                                 Foreground="Black" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    </StackPanel>
+                    <StackPanel Grid.Column="1">
+                        <TextBlock Height="10"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <TextBox Grid.Column="0" FontSize="16" materialDesign:HintAssist.Hint="Số lượng" Margin="10 0 10 0"
+                                                     Text="{Binding ObjectCount, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                                 Foreground="Black" Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                        </Grid>
+                        <TextBlock Height="20"/>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                        Command="{Binding ButtonAddCommand}"
+                                                        Background="#FF086DD1" Foreground="White" Width="50" Height="50"
+                                                        ToolTip="Thêm tài khoản">
+                                <materialDesign:PackIcon Kind="Plus" Height="24" Width="24" />
+                            </Button>
+                            <TextBlock Width="10"/>
+                            <Button Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                        Command="{Binding ButtonDeleteCommand}"
+                                                        Background="#FF086DD1" Foreground="White" Width="50" Height="50"
+                                                        ToolTip="Xoá tài khoản">
+                                <materialDesign:PackIcon Kind="Delete" Height="24" Width="24" />
+                            </Button>
+                            <TextBlock Width="10"/>
+                            <Button Style="{StaticResource MaterialDesignFloatingActionMiniLightButton}"
+                                                        Command="{Binding ButtonEditCommand}"
+                                                        Background="#FF086DD1" Foreground="White" Width="50" Height="50"
+                                                        ToolTip="Sửa tài khoản">
+                                <materialDesign:PackIcon Kind="Pen" Height="24" Width="24" />
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+
+            <!--Search data-->
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <Grid Width="300">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Button Style="{DynamicResource MaterialDesignToolButton}" Command="{Binding TxbSearchChangedCommand}"
+                                                CommandParameter="{Binding ElementName=lsvMain}">
+                        <materialDesign:PackIcon Kind="Magnify" Opacity=".56"/>
+                    </Button>
+                    <TextBox Grid.Column="1" Margin="8 0 0 0" materialDesign:HintAssist.Hint="Gõ từ cần tìm vào đây..."
+                                                 Text="{Binding txbSearch}"
+                                                 materialDesign:TextFieldAssist.DecorationVisibility="Hidden" BorderThickness="0" FontSize="16"
+                                                 MinWidth="200" VerticalAlignment="Center" Name="txbSearch"/>
+                </Grid>
+                <ComboBox Margin="10 0 0 0" ItemsSource="{Binding ListSearch}" DisplayMemberPath="Tname"
+                                              SelectedItem="{Binding SelectedSearch, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                              materialDesign:HintAssist.Hint="Tìm theo..." IsEditable="True" FontSize="16" Width="150"/>
+                <Button Height="40" FontSize="20" Command="{Binding ExportExcel10Command}" Margin="100 5 0 5"
+                                            Foreground="White" Background="Green" BorderBrush="Green" CommandParameter="{Binding ElementName=lsvMain}">
+                    _Xuất excel
+                </Button>
+            </StackPanel>
+            <Grid Grid.Row="3" VerticalAlignment="Stretch">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ListView Name="lsvMain" ItemsSource="{Binding ListBorrowBook}" SelectedItem="{Binding SelectedItem_BookBorrow, Mode=TwoWay}">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Tên sách" DisplayMemberBinding="{Binding Object.DisplayName}"></GridViewColumn>
+                                <GridViewColumn Header="Tác giả" DisplayMemberBinding="{Binding Object.Author}"></GridViewColumn>
+                                <GridViewColumn Header="Số lượng" DisplayMemberBinding="{Binding Count}"></GridViewColumn>
+                                <GridViewColumn Header="Ngày mượn" DisplayMemberBinding="{Binding BorrowDate, StringFormat='dd/MM/yyyy'}"></GridViewColumn>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

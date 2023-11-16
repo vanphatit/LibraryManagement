@@ -1,0 +1,767 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="LibraryManagementPteamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="BookBorrow">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="IDBook" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="IDReader" Type="int" Nullable="false" />
+          <Property Name="Count" Type="int" />
+        </EntityType>
+        <EntityType Name="Bookshelves">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Gender">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Input">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="DateInput" Type="datetime" />
+          <Property Name="IDObjects" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="Count" Type="int" />
+          <Property Name="InputPrice" Type="float" />
+          <Property Name="OutputPrice" Type="float" />
+          <Property Name="Status" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Objects">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+          <Property Name="Author" Type="nvarchar(max)" />
+          <Property Name="Kind" Type="nvarchar" MaxLength="100" />
+          <Property Name="PublishingYear" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pages" Type="nvarchar" MaxLength="50" />
+          <Property Name="Copies" Type="nvarchar" MaxLength="50" />
+          <Property Name="Catagories" Type="nvarchar" MaxLength="100" />
+          <Property Name="IDBookshelf" Type="int" />
+          <Property Name="IDSuplier" Type="int" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Readers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="IDGender" Type="int" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" />
+          <Property Name="Facebook" Type="nvarchar(max)" />
+          <Property Name="MoreInfo" Type="nvarchar(max)" />
+          <Property Name="BookBorrowCount" Type="int" />
+        </EntityType>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" />
+          <Property Name="IDGender" Type="int" Nullable="false" />
+          <Property Name="Zalo" Type="nvarchar" MaxLength="100" />
+          <Property Name="IDPosition" Type="int" />
+          <Property Name="MoreInfo" Type="nvarchar(max)" />
+          <Property Name="ContractDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Supliers">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+          <Property Name="PhoneNumber" Type="varchar" MaxLength="20" />
+          <Property Name="Address" Type="nvarchar(max)" />
+          <Property Name="Email" Type="nvarchar" MaxLength="200" />
+          <Property Name="MoreInfo" Type="nvarchar(max)" />
+          <Property Name="ContractDate" Type="datetime" />
+        </EntityType>
+        <EntityType Name="UserRoles">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Users">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar(max)" />
+          <Property Name="UserName" Type="nvarchar" MaxLength="100" />
+          <Property Name="Password" Type="nvarchar(max)" />
+          <Property Name="Avt" Type="nvarchar(max)" />
+          <Property Name="IDGender" Type="int" Nullable="false" />
+          <Property Name="IDUserRoles" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__BookBorro__IDBoo__4E88ABD4">
+          <End Role="Objects" Type="Self.Objects" Multiplicity="1" />
+          <End Role="BookBorrow" Type="Self.BookBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Objects">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookBorrow">
+              <PropertyRef Name="IDBook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookBorro__IDRea__4F7CD00D">
+          <End Role="Readers" Type="Self.Readers" Multiplicity="1" />
+          <End Role="BookBorrow" Type="Self.BookBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Readers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookBorrow">
+              <PropertyRef Name="IDReader" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Input__IDObjects__4BAC3F29">
+          <End Role="Objects" Type="Self.Objects" Multiplicity="1" />
+          <End Role="Input" Type="Self.Input" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Objects">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Input">
+              <PropertyRef Name="IDObjects" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Objects__IDSupli__3D5E1FD2">
+          <End Role="Bookshelves" Type="Self.Bookshelves" Multiplicity="0..1" />
+          <End Role="Objects" Type="Self.Objects" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bookshelves">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Objects">
+              <PropertyRef Name="IDBookshelf" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Objects__IDSupli__3E52440B">
+          <End Role="Supliers" Type="Self.Supliers" Multiplicity="0..1" />
+          <End Role="Objects" Type="Self.Objects" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supliers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Objects">
+              <PropertyRef Name="IDSuplier" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Readers__BookBor__412EB0B6">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+          <End Role="Readers" Type="Self.Readers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Readers">
+              <PropertyRef Name="IDGender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Staff__IDGender__46E78A0C">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+          <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Staff">
+              <PropertyRef Name="IDGender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Staff__IDPositio__45F365D3">
+          <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+          <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Position">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Staff">
+              <PropertyRef Name="IDPosition" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Users__IDGender__5535A963">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="IDGender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Users__IDUserRol__5441852A">
+          <End Role="UserRoles" Type="Self.UserRoles" Multiplicity="1" />
+          <End Role="Users" Type="Self.Users" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserRoles">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="IDUserRoles" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LibraryManagementPteamModelStoreContainer">
+          <EntitySet Name="BookBorrow" EntityType="Self.BookBorrow" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Bookshelves" EntityType="Self.Bookshelves" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Input" EntityType="Self.Input" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Objects" EntityType="Self.Objects" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Position" EntityType="Self.Position" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Readers" EntityType="Self.Readers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Staff" EntityType="Self.Staff" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Supliers" EntityType="Self.Supliers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UserRoles" EntityType="Self.UserRoles" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__BookBorro__IDBoo__4E88ABD4" Association="Self.FK__BookBorro__IDBoo__4E88ABD4">
+            <End Role="Objects" EntitySet="Objects" />
+            <End Role="BookBorrow" EntitySet="BookBorrow" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookBorro__IDRea__4F7CD00D" Association="Self.FK__BookBorro__IDRea__4F7CD00D">
+            <End Role="Readers" EntitySet="Readers" />
+            <End Role="BookBorrow" EntitySet="BookBorrow" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Input__IDObjects__4BAC3F29" Association="Self.FK__Input__IDObjects__4BAC3F29">
+            <End Role="Objects" EntitySet="Objects" />
+            <End Role="Input" EntitySet="Input" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Objects__IDSupli__3D5E1FD2" Association="Self.FK__Objects__IDSupli__3D5E1FD2">
+            <End Role="Bookshelves" EntitySet="Bookshelves" />
+            <End Role="Objects" EntitySet="Objects" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Objects__IDSupli__3E52440B" Association="Self.FK__Objects__IDSupli__3E52440B">
+            <End Role="Supliers" EntitySet="Supliers" />
+            <End Role="Objects" EntitySet="Objects" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Readers__BookBor__412EB0B6" Association="Self.FK__Readers__BookBor__412EB0B6">
+            <End Role="Gender" EntitySet="Gender" />
+            <End Role="Readers" EntitySet="Readers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Staff__IDGender__46E78A0C" Association="Self.FK__Staff__IDGender__46E78A0C">
+            <End Role="Gender" EntitySet="Gender" />
+            <End Role="Staff" EntitySet="Staff" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Staff__IDPositio__45F365D3" Association="Self.FK__Staff__IDPositio__45F365D3">
+            <End Role="Position" EntitySet="Position" />
+            <End Role="Staff" EntitySet="Staff" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__IDGender__5535A963" Association="Self.FK__Users__IDGender__5535A963">
+            <End Role="Gender" EntitySet="Gender" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__IDUserRol__5441852A" Association="Self.FK__Users__IDUserRol__5441852A">
+            <End Role="UserRoles" EntitySet="UserRoles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="LibraryManagementPteamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="BookBorrow">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="IDBook" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="IDReader" Type="Int32" Nullable="false" />
+          <Property Name="Count" Type="Int32" />
+          <NavigationProperty Name="Object" Relationship="Self.FK__BookBorro__IDBoo__4E88ABD4" FromRole="BookBorrow" ToRole="Objects" />
+          <NavigationProperty Name="Reader" Relationship="Self.FK__BookBorro__IDRea__4F7CD00D" FromRole="BookBorrow" ToRole="Readers" />
+        </EntityType>
+        <EntityType Name="Bookshelf">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Objects" Relationship="Self.FK__Objects__IDSupli__3D5E1FD2" FromRole="Bookshelves" ToRole="Objects" />
+        </EntityType>
+        <EntityType Name="Gender">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Readers" Relationship="Self.FK__Readers__BookBor__412EB0B6" FromRole="Gender" ToRole="Readers" />
+          <NavigationProperty Name="Staffs" Relationship="Self.FK__Staff__IDGender__46E78A0C" FromRole="Gender" ToRole="Staff" />
+          <NavigationProperty Name="Users" Relationship="Self.FK__Users__IDGender__5535A963" FromRole="Gender" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Input">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DateInput" Type="DateTime" Precision="3" />
+          <Property Name="IDObjects" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Count" Type="Int32" />
+          <Property Name="InputPrice" Type="Double" />
+          <Property Name="OutputPrice" Type="Double" />
+          <Property Name="Status" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Object" Relationship="Self.FK__Input__IDObjects__4BAC3F29" FromRole="Input" ToRole="Objects" />
+        </EntityType>
+        <EntityType Name="Object">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Author" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kind" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PublishingYear" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pages" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Copies" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Catagories" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IDBookshelf" Type="Int32" />
+          <Property Name="IDSuplier" Type="Int32" />
+          <NavigationProperty Name="BookBorrows" Relationship="Self.FK__BookBorro__IDBoo__4E88ABD4" FromRole="Objects" ToRole="BookBorrow" />
+          <NavigationProperty Name="Bookshelf" Relationship="Self.FK__Objects__IDSupli__3D5E1FD2" FromRole="Objects" ToRole="Bookshelves" />
+          <NavigationProperty Name="Inputs" Relationship="Self.FK__Input__IDObjects__4BAC3F29" FromRole="Objects" ToRole="Input" />
+          <NavigationProperty Name="Suplier" Relationship="Self.FK__Objects__IDSupli__3E52440B" FromRole="Objects" ToRole="Supliers" />
+        </EntityType>
+        <EntityType Name="Position">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Staffs" Relationship="Self.FK__Staff__IDPositio__45F365D3" FromRole="Position" ToRole="Staff" />
+        </EntityType>
+        <EntityType Name="Reader">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDGender" Type="Int32" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="Facebook" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="MoreInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="BookBorrowCount" Type="Int32" />
+          <NavigationProperty Name="BookBorrows" Relationship="Self.FK__BookBorro__IDRea__4F7CD00D" FromRole="Readers" ToRole="BookBorrow" />
+          <NavigationProperty Name="Gender" Relationship="Self.FK__Readers__BookBor__412EB0B6" FromRole="Readers" ToRole="Gender" />
+        </EntityType>
+        <EntityType Name="Staff">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="IDGender" Type="Int32" Nullable="false" />
+          <Property Name="Zalo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IDPosition" Type="Int32" />
+          <Property Name="MoreInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ContractDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Gender" Relationship="Self.FK__Staff__IDGender__46E78A0C" FromRole="Staff" ToRole="Gender" />
+          <NavigationProperty Name="Position" Relationship="Self.FK__Staff__IDPositio__45F365D3" FromRole="Staff" ToRole="Position" />
+        </EntityType>
+        <EntityType Name="Suplier">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="Address" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Email" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="MoreInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ContractDate" Type="DateTime" Precision="3" />
+          <NavigationProperty Name="Objects" Relationship="Self.FK__Objects__IDSupli__3E52440B" FromRole="Supliers" ToRole="Objects" />
+        </EntityType>
+        <EntityType Name="UserRole">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Users" Relationship="Self.FK__Users__IDUserRol__5441852A" FromRole="UserRoles" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DisplayName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="UserName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Avt" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IDGender" Type="Int32" Nullable="false" />
+          <Property Name="IDUserRoles" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Gender" Relationship="Self.FK__Users__IDGender__5535A963" FromRole="Users" ToRole="Gender" />
+          <NavigationProperty Name="UserRole" Relationship="Self.FK__Users__IDUserRol__5441852A" FromRole="Users" ToRole="UserRoles" />
+        </EntityType>
+        <Association Name="FK__BookBorro__IDBoo__4E88ABD4">
+          <End Role="Objects" Type="Self.Object" Multiplicity="1" />
+          <End Role="BookBorrow" Type="Self.BookBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Objects">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookBorrow">
+              <PropertyRef Name="IDBook" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__BookBorro__IDRea__4F7CD00D">
+          <End Role="Readers" Type="Self.Reader" Multiplicity="1" />
+          <End Role="BookBorrow" Type="Self.BookBorrow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Readers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="BookBorrow">
+              <PropertyRef Name="IDReader" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Objects__IDSupli__3D5E1FD2">
+          <End Role="Bookshelves" Type="Self.Bookshelf" Multiplicity="0..1" />
+          <End Role="Objects" Type="Self.Object" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bookshelves">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Objects">
+              <PropertyRef Name="IDBookshelf" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Readers__BookBor__412EB0B6">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+          <End Role="Readers" Type="Self.Reader" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Readers">
+              <PropertyRef Name="IDGender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Staff__IDGender__46E78A0C">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+          <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Staff">
+              <PropertyRef Name="IDGender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Users__IDGender__5535A963">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="1" />
+          <End Role="Users" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="IDGender" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Input__IDObjects__4BAC3F29">
+          <End Role="Objects" Type="Self.Object" Multiplicity="1" />
+          <End Role="Input" Type="Self.Input" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Objects">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Input">
+              <PropertyRef Name="IDObjects" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Objects__IDSupli__3E52440B">
+          <End Role="Supliers" Type="Self.Suplier" Multiplicity="0..1" />
+          <End Role="Objects" Type="Self.Object" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Supliers">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Objects">
+              <PropertyRef Name="IDSuplier" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Staff__IDPositio__45F365D3">
+          <End Role="Position" Type="Self.Position" Multiplicity="0..1" />
+          <End Role="Staff" Type="Self.Staff" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Position">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Staff">
+              <PropertyRef Name="IDPosition" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Users__IDUserRol__5441852A">
+          <End Role="UserRoles" Type="Self.UserRole" Multiplicity="1" />
+          <End Role="Users" Type="Self.User" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="UserRoles">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Users">
+              <PropertyRef Name="IDUserRoles" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="LibraryManagementPteamEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="BookBorrows" EntityType="Self.BookBorrow" />
+          <EntitySet Name="Bookshelves" EntityType="Self.Bookshelf" />
+          <EntitySet Name="Genders" EntityType="Self.Gender" />
+          <EntitySet Name="Inputs" EntityType="Self.Input" />
+          <EntitySet Name="Objects" EntityType="Self.Object" />
+          <EntitySet Name="Positions" EntityType="Self.Position" />
+          <EntitySet Name="Readers" EntityType="Self.Reader" />
+          <EntitySet Name="Staffs" EntityType="Self.Staff" />
+          <EntitySet Name="Supliers" EntityType="Self.Suplier" />
+          <EntitySet Name="UserRoles" EntityType="Self.UserRole" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK__BookBorro__IDBoo__4E88ABD4" Association="Self.FK__BookBorro__IDBoo__4E88ABD4">
+            <End Role="Objects" EntitySet="Objects" />
+            <End Role="BookBorrow" EntitySet="BookBorrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK__BookBorro__IDRea__4F7CD00D" Association="Self.FK__BookBorro__IDRea__4F7CD00D">
+            <End Role="Readers" EntitySet="Readers" />
+            <End Role="BookBorrow" EntitySet="BookBorrows" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Objects__IDSupli__3D5E1FD2" Association="Self.FK__Objects__IDSupli__3D5E1FD2">
+            <End Role="Bookshelves" EntitySet="Bookshelves" />
+            <End Role="Objects" EntitySet="Objects" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Readers__BookBor__412EB0B6" Association="Self.FK__Readers__BookBor__412EB0B6">
+            <End Role="Gender" EntitySet="Genders" />
+            <End Role="Readers" EntitySet="Readers" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Staff__IDGender__46E78A0C" Association="Self.FK__Staff__IDGender__46E78A0C">
+            <End Role="Gender" EntitySet="Genders" />
+            <End Role="Staff" EntitySet="Staffs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__IDGender__5535A963" Association="Self.FK__Users__IDGender__5535A963">
+            <End Role="Gender" EntitySet="Genders" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Input__IDObjects__4BAC3F29" Association="Self.FK__Input__IDObjects__4BAC3F29">
+            <End Role="Objects" EntitySet="Objects" />
+            <End Role="Input" EntitySet="Inputs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Objects__IDSupli__3E52440B" Association="Self.FK__Objects__IDSupli__3E52440B">
+            <End Role="Supliers" EntitySet="Supliers" />
+            <End Role="Objects" EntitySet="Objects" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Staff__IDPositio__45F365D3" Association="Self.FK__Staff__IDPositio__45F365D3">
+            <End Role="Position" EntitySet="Positions" />
+            <End Role="Staff" EntitySet="Staffs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Users__IDUserRol__5441852A" Association="Self.FK__Users__IDUserRol__5441852A">
+            <End Role="UserRoles" EntitySet="UserRoles" />
+            <End Role="Users" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="LibraryManagementPteamModelStoreContainer" CdmEntityContainer="LibraryManagementPteamEntities">
+          <EntitySetMapping Name="BookBorrows">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.BookBorrow">
+              <MappingFragment StoreEntitySet="BookBorrow">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="IDBook" ColumnName="IDBook" />
+                <ScalarProperty Name="IDReader" ColumnName="IDReader" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Bookshelves">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Bookshelf">
+              <MappingFragment StoreEntitySet="Bookshelves">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Genders">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Gender">
+              <MappingFragment StoreEntitySet="Gender">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Inputs">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Input">
+              <MappingFragment StoreEntitySet="Input">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DateInput" ColumnName="DateInput" />
+                <ScalarProperty Name="IDObjects" ColumnName="IDObjects" />
+                <ScalarProperty Name="Count" ColumnName="Count" />
+                <ScalarProperty Name="InputPrice" ColumnName="InputPrice" />
+                <ScalarProperty Name="OutputPrice" ColumnName="OutputPrice" />
+                <ScalarProperty Name="Status" ColumnName="Status" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Objects">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Object">
+              <MappingFragment StoreEntitySet="Objects">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="Kind" ColumnName="Kind" />
+                <ScalarProperty Name="PublishingYear" ColumnName="PublishingYear" />
+                <ScalarProperty Name="Pages" ColumnName="Pages" />
+                <ScalarProperty Name="Copies" ColumnName="Copies" />
+                <ScalarProperty Name="Catagories" ColumnName="Catagories" />
+                <ScalarProperty Name="IDBookshelf" ColumnName="IDBookshelf" />
+                <ScalarProperty Name="IDSuplier" ColumnName="IDSuplier" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Positions">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Position">
+              <MappingFragment StoreEntitySet="Position">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Readers">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Reader">
+              <MappingFragment StoreEntitySet="Readers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="IDGender" ColumnName="IDGender" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Facebook" ColumnName="Facebook" />
+                <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+                <ScalarProperty Name="BookBorrowCount" ColumnName="BookBorrowCount" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Staffs">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Staff">
+              <MappingFragment StoreEntitySet="Staff">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="IDGender" ColumnName="IDGender" />
+                <ScalarProperty Name="Zalo" ColumnName="Zalo" />
+                <ScalarProperty Name="IDPosition" ColumnName="IDPosition" />
+                <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+                <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Supliers">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.Suplier">
+              <MappingFragment StoreEntitySet="Supliers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="MoreInfo" ColumnName="MoreInfo" />
+                <ScalarProperty Name="ContractDate" ColumnName="ContractDate" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UserRoles">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.UserRole">
+              <MappingFragment StoreEntitySet="UserRoles">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Users">
+            <EntityTypeMapping TypeName="LibraryManagementPteamModel.User">
+              <MappingFragment StoreEntitySet="Users">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Avt" ColumnName="Avt" />
+                <ScalarProperty Name="IDGender" ColumnName="IDGender" />
+                <ScalarProperty Name="IDUserRoles" ColumnName="IDUserRoles" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

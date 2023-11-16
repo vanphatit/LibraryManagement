@@ -1,0 +1,212 @@
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csprojAssemblyReference.cache
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\App.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_Content.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.cache
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.lref
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.dll
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.xml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.xml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.xml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.pdb
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.xml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.xml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.g.cs
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\App.baml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.baml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\ResourcesXAML\MainResources.baml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.baml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.baml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.baml
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.g.resources
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+E:\INFORMATION_TECHNOLOGIES\C# - CSharp\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.dll
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.xml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.xml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.xml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.pdb
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.xml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.xml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csprojAssemblyReference.cache
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\App.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_Content.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.cache
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.lref
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\App.baml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.baml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.baml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.baml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\ResourcesXAML\MainResources.baml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.baml
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.g.resources
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.g.cs
+E:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csprojAssemblyReference.cache
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\App.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_Content.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.cache
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.lref
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.dll
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.xml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.xml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.pdb
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.xml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\App.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\ResourcesXAML\MainResources.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.baml
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.g.resources
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+D:\OneDrive - Mail Server\DEVELOPMENT\C#\Project\Important_project\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csprojAssemblyReference.cache
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\App.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_Content.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.cache
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.lref
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.xml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.xml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.pdb
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\App.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\ResourcesXAML\MainResources.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.baml
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.g.resources
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+C:\Users\pteam\Dropbox\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe.config
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.exe
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\LibraryManagement.pdb
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.dll
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.xml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\EPPlus.xml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignColors.pdb
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.pdb
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\MaterialDesignThemes.Wpf.xml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\Microsoft.Expression.Interactions.xml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\bin\Debug\System.Windows.Interactivity.xml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.AssemblyReference.cache
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\App.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_Content.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.cache
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement_MarkupCompile.lref
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\App.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\BorrowBook.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LoginWindow.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\MainWindow.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\RegisterWindow.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\ResourcesXAML\MainResources.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\UserControlPteam\ControlBarPt.baml
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.g.resources
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.Properties.Resources.resources
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.GenerateResource.cache
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CoreCompileInputs.cache
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.csproj.CopyComplete
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.exe
+D:\OneDrive\C# projects\LibraryManagement\LibraryManagement\obj\Debug\LibraryManagement.pdb

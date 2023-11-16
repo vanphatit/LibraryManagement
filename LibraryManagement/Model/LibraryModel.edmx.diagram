@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a15b814aede6412399c1aa4ac53c80e1" Name="Diagram1">
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.BookBorrow" Width="1.5" PointX="5.25" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Bookshelf" Width="1.5" PointX="0.75" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Gender" Width="1.5" PointX="0.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Input" Width="1.5" PointX="5.25" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Object" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Position" Width="1.5" PointX="3.75" PointY="16.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Reader" Width="1.5" PointX="3" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Staff" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.Suplier" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.UserRole" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LibraryManagementPteamModel.User" Width="1.5" PointX="3" PointY="12.625" IsExpanded="true" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__BookBorro__IDBoo__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__BookBorro__IDRea__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Objects__IDSupli__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Readers__BookBor__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Staff__IDGender__46E78A0C" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Users__IDGender__5535A963" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Input__IDObjects__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Objects__IDSupli__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Staff__IDPositio__45F365D3" ManuallyRouted="false" />
+        <AssociationConnector Association="LibraryManagementPteamModel.FK__Users__IDUserRol__5441852A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
